@@ -12,6 +12,7 @@ file1 = open("WS1.txt", "r").read()
 file1 = json.loads(file1)
 names.extend(list(file1.keys()))
 purposes.extend(list(file1.values()))
+file1.close()
 
 # Take elements form WS2.txt file
 file2 = pd.read_csv("WS2.txt", sep=":", header=None)
